@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">What time is it?</string>
+    <string name="empty">""</string>
+    <string name="projectLogo">projectLogo</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="your_score_is">Your score:</string>
+    <string name="answer_result_picture">answer result</string>
+    <string name="clock_face_picture">clock face picture</string>
+    <string name="clock_big_hand_picture">clock big hand</string>
+    <string name="clock_small_hand_picture">clock small hand</string>
+    <string name="designed_picture">Designed picture</string>
+    <string name="picture_show_the_correctness">Picture show the correctness</string>
+    <string name="exit_button">exit button</string>
+    <string name="sound_button">sound button</string>
+    <string name="loading_text">loading text</string>
+    <string name="help_button">help button</string>
+    <string name="email">the.project.mgi@gmail.com</string>
+    <string name="feedback">Feedback - What time is it?</string>
+    <string name="ClickHere">Feedback is welcome \n Click here to send feedback email</string>
+    <string name="description">Help kids to learn read the clock</string>
+    <string name="what_time_is_it">What time is it ?</string>
+    <string name="pricacy">Privacy Policy - This application is\n NOT collecting any personal data</string>
+</resources>

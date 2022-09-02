@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/jabjai_heavy"
+        android:gravity="center"
+        android:text="@string/what_time_is_it"
+        android:textColor="#FFD23F"
+        app:layout_constraintBottom_toTopOf="@id/description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/jabjai_heavy"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@id/tv_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/jabjai_heavy"
+        android:gravity="center"
+        android:text="@string/ClickHere"
+        android:textColor="@color/answerColor"
+        app:layout_constraintBottom_toTopOf="@id/tv_privacy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <TextView
+        android:id="@+id/tv_privacy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/jabjai_heavy"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/pricacy"
+        android:textColor="@color/answerColor"
+        app:layout_constraintBottom_toTopOf="@id/btn_dialogHelpOk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <Button
+        android:id="@+id/btn_dialogHelpOk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/jabjai_heavy"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_privacy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

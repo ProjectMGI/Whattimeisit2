@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background_blue"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:id="@+id/gridlyMiddle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guidelinev40"
+        app:layout_constraintRight_toLeftOf="@id/guidelinev65"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivExit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="@string/exit_button"
+            android:src="@drawable/exiticon" />
+
+        <ImageView
+            android:id="@+id/ivHelp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="@string/help_button"
+            android:src="@drawable/helpicon" />
+
+        <ImageView
+            android:id="@+id/ivSound"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="@string/sound_button"
+            android:src="@drawable/soundonicon" />
+
+
+        <Button
+            android:id="@+id/btnAnswer1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:autoSizeTextType="uniform"
+            android:background="@drawable/button_background_blue"
+            android:fontFamily="@font/digital_clock"
+            android:gravity="center_vertical|end"
+            android:onClick="CheckAnswer"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:tag="1"
+            android:text="@string/empty"
+            android:textColor="@color/answerColor" />
+
+        <Button
+            android:id="@+id/btnAnswer2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:autoSizeTextType="uniform"
+            android:background="@drawable/button_background_blue"
+            android:fontFamily="@font/digital_clock"
+            android:gravity="center_vertical|end"
+            android:onClick="CheckAnswer"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:tag="2"
+            android:text="@string/empty"
+            android:textColor="@color/answerColor" />
+
+        <Button
+            android:id="@+id/btnAnswer3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:autoSizeTextType="uniform"
+            android:background="@drawable/button_background_blue"
+            android:fontFamily="@font/digital_clock"
+            android:gravity="center_vertical|end"
+            android:onClick="CheckAnswer"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:tag="3"
+            android:text="@string/empty"
+            android:textColor="@color/answerColor" />
+
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/ivResult1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+
+    <ImageView
+        android:id="@+id/ivResult10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivResult12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/answer_result_picture"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockpiece_blue" />
+
+    <ImageView
+        android:id="@+id/ivClockCenter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/designed_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clockcenter" />
+
+    <ImageView
+        android:id="@+id/ivMainClock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:contentDescription="@string/clock_face_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock_gameface" />
+
+    <ImageView
+        android:id="@+id/ivBigHand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:contentDescription="@string/clock_big_hand_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock_bigpointer" />
+
+    <ImageView
+        android:id="@+id/ivSmallHand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:contentDescription="@string/clock_small_hand_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock_smallpointer" />
+
+    <ImageView
+        android:id="@+id/thumbup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="60dp"
+        android:contentDescription="@string/picture_show_the_correctness"
+        android:src="@drawable/smileup"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

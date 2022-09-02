@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "274595288255",
+    "firebase_url": "https://whattimeisit2-90f0c.firebaseio.com",
+    "project_id": "whattimeisit2-90f0c",
+    "storage_bucket": "whattimeisit2-90f0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274595288255:android:6a47553c3975e4987ca20a",
+        "android_client_info": {
+          "package_name": "mgi.gabor.uk.whattimeisit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274595288255-l7j7hl9ms2374ph9pppob6pekmnkfg96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mgi.gabor.uk.whattimeisit",
+            "certificate_hash": "f4931b4e5ebd835aab60a2d031c5a180bf5f64ff"
+          }
+        },
+        {
+          "client_id": "274595288255-c18oovqcmtpkos9cgd9pafmrv3g2128s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4UrAwjuWyVEmde8yntdb-I-7jkUZUhnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274595288255-c18oovqcmtpkos9cgd9pafmrv3g2128s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
